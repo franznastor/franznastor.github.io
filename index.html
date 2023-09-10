@@ -2,28 +2,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franz Nastor</title>
+    <title>Franz Luiric Nastor</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="section greeting-section">
         <div class="greeting-message-wrapper">
-          <p>Hey, I'm Franz. Thanks for checking out my website.</p>
-        </div>
-        <div class="social-icons">
-          <a class="social-icons-link" href="http://www.linkedin.com/in/franzluiricnastor" target="_blank">
-            <i class="animated-icon fa fa-linkedin"></i>
-          </a>
-          <a class="social-icons-link" href="http://www.github.com/franznastor" target="_blank">
-            <i class="animated-icon fa fa-github"></i>
-          </a>
-        </div>
-      </div>
+          <!-- Element to contain animated typing -->
+          <span id="element"></span>
+
+          <!-- Load library from the CDN -->
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+          <!-- Setup and start animation! -->
+          <script>
+            var typed = new Typed('#element', {
+              strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+              typeSpeed: 50,
+            });
+          </script>
+          <p>Hey, I'm Franz.</p>
+          <p>Thanks for checking out my website.</p>
+      </div> 
     <div class="section bio-section">
         <div class="bio-section-text">
-            <p class="bio-section-paragraph">I am a software engineer based in Chicago.
-            These are the languages I (like) to work in: Java, Python, SQL.
-            Outside of work I am learning how to write C++ and Typescript.
+            <p class="bio-section-paragraph">I'm a software engineer based in Chicago.
+            These are the languages I work in: Java, Python, SQL.
+            Outside of work I am learning how to write C++ and Javascript/Typescript.
             </p>
         </div>
     </div>

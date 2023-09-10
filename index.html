@@ -1,76 +1,85 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franz Luiric Nastor</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franz Luiric Nastor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="section greeting-section">
-        <div class="greeting-message-wrapper">
-          <!-- Element to contain animated typing -->
-          <span id="element"></span>
+  <div class="section greeting-section">
 
-          <!-- Load library from the CDN -->
-          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <div class="greeting-message-wrapper">
+      <!-- Element to contain animated typing -->
+      <span id="element"></span>
 
-          <!-- Setup and start animation! -->
-          <script>
-            var typed = new Typed(
-              '#element', 
-              {
-                strings: ['Yo!','This is Franz.', 'Thanks for checking out my website.'],
-                typeSpeed: 50,
-                backDelay: 2500,
-                loop: true,
-              }
-            );
-          </script>
-      </div> 
+      <!-- Load library from the CDN -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-      <div class="social icons">
-        <style>
-          .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-            border-radius: 50%;
+      <!-- Setup and start animation! -->
+      <script>
+        var typed = new Typed(
+          '#element',
+          {
+            strings: ['Yo!', 'This is Franz.', 'Thanks for checking out my website :)'],
+            typeSpeed: 50,
+            backDelay: 1000,
+            loop: true,
           }
-          .fa:hover {
-            opacity: 0.8;
-          }
-          .fa-linkedin {
-            background: #007bb5;
-            color: white;
-          }
-          .fa-github {
-            background: black;
-            color: white;
-          }
-        </style>
+        );
+      </script>
+    </div>
+
+    <div class="social icons">
+      <style>
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 30px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 50%;
+        }
+
+        .fa:hover {
+          opacity: 0.8;
+        }
+
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+
+        .fa-github {
+          background: black;
+          color: white;
+        }
+      </style>
 
       <a href="https://www.linkedin.com/in/franz-luiric-nastor/" class="fa fa-linkedin"></a>
       <a href="https://github.com/franznastor" class="fa fa-github"></a>
-    </div> 
+    </div>
+  </div>
 
     <div class="section bio-section">
-        <div class="bio-section-text">
-            <p class="bio-section-paragraph">I'm a software engineer based in Chicago.</p>
-            <p>These are the languages I work in: Java, Python, SQL.
-              Outside of work I am learning how to write C++ and Javascript/Typescript.</p>
-        </div>
-    </div>
-    <div class="section interests-section">
-        <div class="interests-section-text">
-          <p class="interests-section-paragraph">
-            Software engineering isn't the only thing filling up my time. I like to workout, 
-            travel with my friends, and go to music festivals. And on occasion, watch a movie or two.
-          </p>
-        </div>
+      <div class="bio-section-text">
+        <p class="bio-section-paragraph">I'm a software engineer based in Chicago.</p>
+        <p>These are the languages I work in: Java, Python, SQL.
+          Outside of work I am learning how to write C++ and Javascript/Typescript.</p>
       </div>
+    </div>
+
+    <div class="section interests-section">
+      <div class="interests-section-text">
+        <p class="interests-section-paragraph">
+          Software engineering isn't the only thing filling up my time. I like to workout,
+          travel with my friends, and go to music festivals. And on occasion, watch a movie or two.
+        </p>
+      </div>
+    </div>
 </body>
+
 </html>

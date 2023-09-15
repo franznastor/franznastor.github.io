@@ -16,24 +16,22 @@ body {
 
 .greeting-section {
     height: 700px;
-    background-color: red;
+    background-color: plum;
     background-size: cover;
 }
 
 .greeting-message-wrapper {
+    font-size: 72;
     text-align: center;
-    position: relative;
+    padding-top: 350px;
+    padding-bottom: 75px;
+    margin: auto;
     color: white;
-    max-width: 700px;
-    padding: 388px 5% 0 45%;
 }
 
 .social-icons {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 388px 5% 0 45%;
-
-    font-size: 56px;
+    margin: auto;
 }
 
 .bio-section {
